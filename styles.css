@@ -11,7 +11,7 @@ body {
     padding: 0 20px;
 }
 
-#quote-container {
+/* #quote-container {
     text-align: center;
     position: relative;
     margin-bottom: 40px;
@@ -41,7 +41,7 @@ body {
     content: "”";
     right: -30px;
     bottom: -20px;
-}
+} */
 
 #source-container {
     margin-top: 15px;

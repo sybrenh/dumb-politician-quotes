@@ -8,59 +8,178 @@
 <body>
 
 <div id="quote">Click the button to see a questionable quote!</div>
-<button onclick="newQuote()">New Quote</button>
+<button onclick="newQuote()">Nog Dommer</button>
 
 <script>
 const quotes = [
   {
-    "quote": "Pakistan is an Islamic terror state.",
+    "quote": "Dat vrouwen onherkenbaar als zombies over straat gaan, is een belediging voor iedereen die gelooft in gelijke rechten.",
     "author": "Geert Wilders",
-    "source": "https://twitter.com/geertwilderspvv/status/1778307839083106587"
+    "source": "https://nl.m.wikiquote.org/wiki/Geert_Wilders",
+    "dumb_score": 70
   },
   {
-    "quote": "I hope #Iran will soon become a secular state again, with #freedom for the Iranian people and without an oppressive and barbaric Islamic …",
+    "quote": "Ik ga er als eerste met cement en stenen heen om die moskeeën dicht te metselen.",
     "author": "Geert Wilders",
-    "source": "https://twitter.com/geertwilderspvv/status/1792435140599177627"
+    "source": "https://www.pvv.nl/spreekteksten-geert-wilders.html",
+    "dumb_score": 85
   },
   {
-    "quote": "Hamas heeft joodse vrouwen vermoord en verkracht, sneed hun borsten eraf, onthoofde babies en wil Israël van de kaart vegen.",
+    "quote": "Het rechtssysteem in Noord-Korea is nog beter dan dat in Nederland.",
     "author": "Geert Wilders",
-    "source": "https://twitter.com/geertwilderspvv/status/1926893259571208303"
+    "source": "https://quotes.nl/auteur/geert-wilders.html",
+    "dumb_score": 65
   },
   {
-    "quote": "Nobody cares. You will probably be next.",
+    "quote": "Iedere niet-westerse allochtoon moet een assimilatiecontract tekenen… Als je daar niet aan voldoet, moet je het land verlaten.",
     "author": "Geert Wilders",
-    "source": "https://twitter.com/geertwilderspvv/status/1865873520418340950"
+    "source": "https://quotes.nl/auteur/geert-wilders.html",
+    "dumb_score": 60
   },
   {
-    "quote": "De PVV stemt dus tegen de wet van Jetten om de salderingsregeling voor kleinverbruikers af te bouwen.",
+    "quote": "Als de kogel van links komt, weet heel Nederland dat aan de zijkant de letters PvdA staan geschreven.",
     "author": "Geert Wilders",
-    "source": "https://twitter.com/geertwilderspvv/status/1615470041000026129"
+    "source": "https://citaten.net/quotes/geert_wilders/60819/",
+    "dumb_score": 55
   },
   {
-    "quote": "David Horowitz, my dear friend and ally, passed away. David was an American hero, a giant, a warrior for freedom, one of the bravest ...",
+    "quote": "Ze zijn volslagen van lotje getikt.",
     "author": "Geert Wilders",
-    "source": "https://twitter.com/geertwilderspvv/status/1917505837112910103"
+    "source": "https://www.hpdetijd.nl/2009-11-04/hpde-tijd-geert-wilders-quote-quiz/",
+    "dumb_score": 40
   },
   {
-    "quote": "“We are at war” says Netanyahu. Indeed. And we support you. Give them hell. #Israel. Quote. Benjamin Netanyahu",
+    "quote": "Dit is de zoveelste krankjorumme kolere-opmerking van die van de ratten besnuffelde communisten.",
     "author": "Geert Wilders",
-    "source": "https://twitter.com/geertwilderspvv/status/1710578684740907045"
+    "source": "https://www.hpdetijd.nl/2009-11-04/hpde-tijd-geert-wilders-quote-quiz/",
+    "dumb_score": 50
   },
   {
-    "quote": "De PVV zal je erg gaan missen Lilian. Je bent een autoriteit op Justitie met een groot hart voor de politie en een sympathieke collega ...",
+    "quote": "We vieren het leven, zij vieren de dood.",
     "author": "Geert Wilders",
-    "source": "https://twitter.com/geertwilderspvv/status/1685575629406662656"
+    "source": "https://twitter.com/geertwilderspvv/status/1619311705938628610",
+    "dumb_score": 45
+  },
+  {
+    "quote": "Iran needs another revolution. Get rid of the islamofascist regime…",
+    "author": "Geert Wilders",
+    "source": "https://twitter.com/geertwilderspvv/status/1931687991795142667",
+    "dumb_score": 35
+  },
+  {
+    "quote": "No more #burqa and #nikab in The Netherlands and as soon as possible no more #hijab either.",
+    "author": "Geert Wilders",
+    "source": "https://twitter.com/geertwilderspvv/status/1161366638161215488",
+    "dumb_score": 50
+  },
+  {
+    "quote": "Stay strong #Israel we will always be with you…",
+    "author": "Geert Wilders",
+    "source": "https://twitter.com/geertwilderspvv/status/1779249094726140128",
+    "dumb_score": 30
+  },
+  {
+    "quote": "I despise dictator Erdogan and his Islamist voters…",
+    "author": "Geert Wilders",
+    "source": "https://twitter.com/geertwilderspvv/status/1665362115647922178",
+    "dumb_score": 40
+  },
+  {
+    "quote": "The reality is that Islam is a totalitarian ideology aimed at establishing tyrannical power over non-Muslims.",
+    "author": "Geert Wilders",
+    "source": "https://www.geertwilders.nl/english/1937-speech-geert-wilders-bornholm-denmark-june-13-2015",
+    "dumb_score": 65
+  },
+  {
+    "quote": "Muhammad is the most popular name among newborn boys in major cities…",
+    "author": "Geert Wilders",
+    "source": "https://www.geertwilders.nl/in-de-media-mainmenu-74/nieuws-mainmenu-114/94-english/1881-speech-geert-wilders-in-nashville-usa-new-international-freedom-alliance-ifa-to-stop-the-islamisation-of-the-free-world",
+    "dumb_score": 55
+  },
+  {
+    "quote": "Alleen de grenzen sluiten voor nog meer gelukzoekers is niet genoeg…",
+    "author": "Geert Wilders",
+    "source": "https://www.pvv.nl/spreekteksten-geert-wilders.html",
+    "dumb_score": 60
+  },
+  {
+    "quote": "Ons land is overvol. Onze wijken zijn vaak onherkenbaar.",
+    "author": "Geert Wilders",
+    "source": "https://www.pvv.nl/spreekteksten-geert-wilders.html",
+    "dumb_score": 55
+  },
+  {
+    "quote": "Geld naar onze eigen mensen. … Weg met het corrupte Brussel.",
+    "author": "Geert Wilders",
+    "source": "https://www.pvv.nl/spreekteksten-geert-wilders.html",
+    "dumb_score": 50
+  },
+  {
+    "quote": "Ik zaai geen haat, dat doet de Koran… dan is de Koran net zo dik als de Donald Duck.",
+    "author": "Geert Wilders",
+    "source": "https://de.wikipedia.org/wiki/Geert_Wilders",
+    "dumb_score": 75
+  },
+  {
+    "quote": "Muslims who wish to live here should rip out half the Koran…",
+    "author": "Geert Wilders",
+    "source": "https://en.wikipedia.org/wiki/Geert_Wilders",
+    "dumb_score": 80
+  },
+  {
+    "quote": "Head rag tax – een licentie van €1000 per jaar voor hijab.",
+    "author": "Geert Wilders",
+    "source": "https://en.wikipedia.org/wiki/Head_rag_tax",
+    "dumb_score": 70
+  },
+  {
+    "quote": "If I were minister of Binnenlandse Zaken, I'd ban headscarves the day after installation.",
+    "author": "Geert Wilders",
+    "source": "https://quotes.nl/auteur/geert-wilders.html",
+    "dumb_score": 65
+  },
+  {
+    "quote": "Willen wij in een land leven dat straks voor eenderde… uit moslims bestaat?",
+    "author": "Geert Wilders",
+    "source": "https://quotes.nl/auteur/geert-wilders.html",
+    "dumb_score": 60
+  },
+  {
+    "quote": "De demografische samenstelling van de bevolking is het grootste probleem van Nederland.",
+    "author": "Geert Wilders",
+    "source": "https://www.pvv.nl/spreekteksten-geert-wilders.html",
+    "dumb_score": 55
+  },
+  {
+    "quote": "De suggestie dat ik een gevaar zou zijn voor de democratie is … zeer onjuist.",
+    "author": "Geert Wilders",
+    "source": "https://citaten.net/quotes/geert_wilders/60818/",
+    "dumb_score": 45
+  },
+  {
+    "quote": "Ik hoop dat miljoenen mensen niet het vertrouwen in de rechterlijke macht verliezen.",
+    "author": "Geert Wilders",
+    "source": "https://citaten.net/quotes/geert_wilders/60816/",
+    "dumb_score": 50
   }
 ];
 
-function newQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const selectedQuote = quotes[randomIndex];
 
-    document.getElementById("quote").innerHTML =
-        `<p>"${selectedQuote.quote}"<br>— <strong>${selectedQuote.author}</strong></p>
-         <p><a href="${selectedQuote.source}" target="_blank">Source</a></p>`;
+function newQuote() {
+    const filteredQuotes = quotes.filter(q => q.dumb_score > currentDumbScore);
+
+    let selectedQuote;
+    if (filteredQuotes.length > 0) {
+        selectedQuote = filteredQuotes.reduce((prev, curr) => (prev.dumb_score < curr.dumb_score ? prev : curr));
+        currentDumbScore = selectedQuote.dumb_score;
+    } else {
+        selectedQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        currentDumbScore = selectedQuote.dumb_score;
+    }
+
+    document.getElementById(\"quote\").innerHTML =
+        `<p>\"${selectedQuote.quote}\"<br>— <strong>${selectedQuote.author}</strong></p>
+         <p><a href=\"${selectedQuote.source}\" target=\"_blank\">Source</a> (Dumb Score: ${selectedQuote.dumb_score})</p>`;
 }
 </script>
 

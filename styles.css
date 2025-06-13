@@ -1,0 +1,64 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 20px;
+}
+
+#quote {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#quote::before, #quote::after {
+    font-family: serif;
+    font-size: 3rem;
+    color: #bb86fc;
+    position: absolute;
+}
+
+#quote::before {
+    content: "“";
+    left: -30px;
+    top: -10px;
+}
+
+#quote::after {
+    content: "”";
+    right: -30px;
+    bottom: -20px;
+}
+
+button {
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9c61e8;
+}
+
+a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

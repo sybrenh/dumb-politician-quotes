@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumb Politician Quotes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+            background-color: #f0f8ff;
+        }
+
+        #quote {
+            margin: 20px auto;
+            font-size: 1.4em;
+            max-width: 600px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="quote">Click the button to see a questionable quote!</div>
+<button onclick="newQuote()">New Quote</button>
+
+<script>
+const quotes = [
+    {
+        "quote": "I think gay marriage is something that should be between a man and a woman.",
+        "author": "Arnold Schwarzenegger",
+        "source": "https://www.nbcnews.com/id/wbna30846978"
+    },
+    {
+        "quote": "Rarely is the question asked: Is our children learning?",
+        "author": "George W. Bush",
+        "source": "https://www.whitehouse.gov/about-the-white-house/presidents/george-w-bush/"
+    },
+    {
+        "quote": "I've now been in 57 states—I think one left to go.",
+        "author": "Barack Obama",
+        "source": "https://www.reuters.com/article/us-usa-politics-obama-idUSN0946456220080510"
+    },
+    {
+        "quote": "They misunderestimated me.",
+        "author": "George W. Bush",
+        "source": "https://www.whitehouse.gov/about-the-white-house/presidents/george-w-bush/"
+    },
+    {
+        "quote": "We have to pass the bill so that you can find out what is in it.",
+        "author": "Nancy Pelosi",
+        "source": "https://www.speaker.gov/newsroom/pelosi-remarks-at-2010-legislative-conference-for-national-association-of-counties"
+    }
+];
+
+function newQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const selectedQuote = quotes[randomIndex];
+
+    document.getElementById("quote").innerHTML =
+        `<p>"${selectedQuote.quote}"<br>— <strong>${selectedQuote.author}</strong></p>
+         <p><a href="${selectedQuote.source}" target="_blank">Source</a></p>`;
+}
+</script>
+
+</body>
+</html>

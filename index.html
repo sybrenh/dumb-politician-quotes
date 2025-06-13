@@ -177,9 +177,10 @@ function newQuote() {
         currentDumbScore = selectedQuote.dumb_score;
     }
 
-    document.getElementById(\"quote\").innerHTML =
-        `<p>\"${selectedQuote.quote}\"<br>— <strong>${selectedQuote.author}</strong></p>
-         <p><a href=\"${selectedQuote.source}\" target=\"_blank\">Source</a> (Dumb Score: ${selectedQuote.dumb_score})</p>`;
+    document.getElementById("quote").innerHTML =
+        `<p><span style="font-size: 2rem; color: #666;">“</span>${selectedQuote.quote}<span style="font-size: 2rem; color: #666;">”</span><br>— <strong>${selectedQuote.author}</strong></p>
+         <p style="margin-top: 10px;"><a href="${selectedQuote.source}" target="_blank">Source</a> (Dumb Score: ${selectedQuote.dumb_score})</p>`;
+
 }
 </script>
 

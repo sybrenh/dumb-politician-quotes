@@ -99,8 +99,11 @@ button {
 
 #selected-politician-img {
     max-width: 300px;
+    width: 100%;
+    height: auto;
     margin-bottom: 20px;
     border-radius: 8px;
+    display: block;
 }
 
 /* Startscreen als overlay midden in beeld */

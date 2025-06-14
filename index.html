@@ -7,11 +7,15 @@
 </head>
 <body>
 
-<div id="start-screen">
+<!-- De afbeelding altijd zichtbaar -->
+<img src="geert1.avif" alt="Geert Wilders" id="politician-img">
+
+<!-- Starttekst -->
+<div id="start-screen" >
     <p>Klik op de politicus voor een rare quote</p>
-    <img src="geert1.avif" alt="Geert Wilders" id="politician-img" style="cursor:pointer;max-width:300px;">
 </div>
 
+<!-- Quotes -->
 <div id="quote-section">
     <div id="quote"></div>
     <button onclick="newQuote()">Nog Dommer</button>
@@ -172,13 +176,15 @@ const quotes = [
 ];
 
 let currentDumbScore = 0;
+let inStartScreen = true;
 
-document.getElementById('politician-img').onclick = function() {
-    // Verberg start-scherm, toon quote-gedeelte.
-    document.getElementById('start-screen').style.display = 'none';
-    document.getElementById('quote-section').style.display = '';
-    // Toon direct de eerste quote
-    newQuote();
+document.getElementById('politician-img').onclick = function () {
+    if (inStartScreen) {
+        document.getElementById('start-screen').style.display = 'none';
+        document.getElementById('quote-section').style.display = '';
+        newQuote();
+        inStartScreen = false;
+    }
 };
 
 function newQuote() {

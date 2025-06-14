@@ -72,6 +72,31 @@ button {
     transition: background-color 0.3s ease;
 }
 
+#politician-img {
+    cursor: pointer;
+    top: 150px;
+    position: fixed;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Startscreen als overlay midden in beeld */
+#start-screen {
+    position: fixed; /* Blijft op z'n plek, geen invloed op andere content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Exact midden */
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 2rem;  /* vergelijkbaar met quotes */
+    color: #fffcfc;
+    z-index: 10; /* boven andere content */
+}
+
+/* #quote-section {
+    display: none;
+} */
 
 button:hover {
     background-color: #9c61e8;

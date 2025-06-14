@@ -17,6 +17,15 @@ body {
     margin-bottom: 40px;
 }
 
+#quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
 #quote {
     font-size: 1.8rem;
     line-height: 1.5;

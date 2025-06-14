@@ -20,10 +20,14 @@ body {
 #quote-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    align-items: center; /* Horizontaal centreren */
+    margin-top: 20px;    /* Ruimte onder de image */
+    /* Geen height: 100vh, geen justify-content */
     text-align: center;
+    padding: 0 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #quote {

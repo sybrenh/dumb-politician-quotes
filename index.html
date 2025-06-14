@@ -176,15 +176,19 @@ const quotes = [
 ];
 
 let currentDumbScore = 0;
-let inStartScreen = true;
 
-document.getElementById('politician-img').onclick = function () {
-    if (inStartScreen) {
-        document.getElementById('start-screen').style.display = 'none';
-        document.getElementById('quote-section').style.display = '';
-        newQuote();
-        inStartScreen = false;
+const img = document.getElementById('politician-img');
+const startScreen = document.getElementById('start-screen');
+const quoteSection = document.getElementById('quote-section');
+
+img.onclick = function() {
+    // Verberg het startscherm als die nog zichtbaar is
+    if (startScreen.style.display !== 'none') {
+        startScreen.style.display = 'none';
+        quoteSection.style.display = 'block';
     }
+    // Laat altijd een nieuwe quote zien
+    newQuote();
 };
 
 function newQuote() {
@@ -200,8 +204,8 @@ function newQuote() {
     }
 
     document.getElementById("quote").innerHTML =
-        `<p><span style="font-size: 2rem; color: #666;">“</span>${selectedQuote.quote}<span style="font-size: 2rem; color: #666;">”</span><br>— <strong>${selectedQuote.author}</strong></p>
-         <p style="margin-top: 10px;"><a href="${selectedQuote.source}" target="_blank">Source</a></p>`;
+        `<p>${selectedQuote.quote}</p><p>— <strong>${selectedQuote.author}</strong></p>
+         <p><a href="${selectedQuote.source}" target="_blank">Source</a></p>`;
 }
 </script>
 
